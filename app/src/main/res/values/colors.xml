@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="negro">#FF000000</color>
+    <color name="blanco">#FFFFFFFF</color>
+    <color name="grisfondo">#cbc6c3</color>
+    <color name="cardcolor">#E4E4E4</color>
+    <color name="rojo">#BF785E</color>
+    <color name="rosa">#D9A491</color>
+    <color name="gris1">#C1D4D9</color>
+    <color name="gris2">#E9EFF2</color>
+    <color name="amarillo">#FCFFF5</color>
+    <color name="azulMarino">#22416A</color>
+    <color name="azul2">#508BBF</color>
+    <color name="azul3">#699EBF</color>
+    <color name="azul4">#96BFD9</color>
+    <color name="azul5">#5d80b6</color>
+    <color name="gris3">#F2F2F2</color>
+    <color name="azul6">#A0B5DC</color>
+
+</resources>

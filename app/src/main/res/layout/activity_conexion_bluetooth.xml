@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/blanco"
+    tools:context=".conexionBluetooth">
+
+    <ProgressBar
+        android:id="@+id/progress_scan_devices"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="14dp"
+        android:visibility="gone"
+        />
+
+    <TextView
+        android:id="@+id/txtDispoVin"
+        android:layout_width="361dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="25dp"
+        android:fontFamily="@font/roboto_medium"
+        android:text="Dispositivos vinculados"
+        android:textAlignment="center"
+        android:textColor="@color/azulMarino"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <ListView
+        android:id="@+id/lvDV"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_below="@+id/txtDispoVin"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="25dp"
+        android:textColor="@color/azulMarino"/>
+
+    <TextView
+        android:id="@+id/txtDisponibles"
+        android:layout_width="268dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lvDV"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="25dp"
+        android:fontFamily="@font/roboto_medium"
+        android:text="Dispositivos disponibles"
+        android:textAlignment="center"
+        android:textColor="@color/azulMarino"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <ListView
+        android:id="@+id/lvDD"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_below="@+id/txtDisponibles"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="25dp"
+        android:textColor="@color/azulMarino"/>
+
+    <Button
+        android:id="@+id/btescanear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Escanear"
+        android:textColor="@color/blanco"
+        android:layout_below="@+id/lvDD"
+        android:layout_margin="20dp"
+        android:background="@drawable/style_buttons"/>
+
+    <Button
+        android:id="@+id/btdetenerDis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Detener"
+        android:textColor="@color/blanco"
+        android:layout_below="@+id/lvDD"
+        android:layout_margin="20dp"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/style_buttons"/>
+
+</RelativeLayout>

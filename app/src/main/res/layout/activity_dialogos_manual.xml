@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/blanco"
+    android:id="@+id/RLD"
+    tools:context=".dialogosManual">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/layoutOpciones"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                android:background="@drawable/style_txt">
+
+                <ImageSwitcher
+                android:id="@+id/imgSwitcher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="16dp"
+                android:layout_centerHorizontal="true"
+                />
+
+                <TextSwitcher
+                    android:id="@+id/txtTXTm1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imgSwitcher"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:textSize="20dp"
+                    android:textColor="@color/negro"
+                    android:fontFamily="@font/roboto"
+                    android:layout_marginTop="17dp"/>
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/siguiente"
+                android:background="@drawable/style_buttons"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/layoutOpciones"
+                android:layout_margin="20dp"
+                android:text="Siguiente"
+                android:fontFamily="@font/roboto_medium"
+                android:textColor="@color/blanco"/>
+
+            <Button
+                android:id="@+id/cerrar"
+                android:background="@drawable/style_buttons"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/layoutOpciones"
+                android:layout_margin="20dp"
+                android:text="Cerrar"
+                android:fontFamily="@font/roboto_medium"
+                android:textColor="@color/blanco"/>
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
