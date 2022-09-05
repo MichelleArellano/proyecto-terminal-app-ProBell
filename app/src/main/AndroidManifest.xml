@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.prototype.probell">
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_index3"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_index3_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ProBell">
+        <activity android:name=".conexionBluetooth"
+            android:label="@string/conBlue"
+            android:theme="@style/Theme.AppCompat.Dialog.Alert"></activity>
+        <activity
+            android:name=".rutinaPorZonas"
+            android:label="@string/rutZ"
+            android:theme="@style/Theme.AppCompat.Dialog.Alert" />
+        <activity
+            android:name=".rutinaCompleta"
+            android:label="@string/rutC"
+            android:theme="@style/Theme.AppCompat.Dialog.Alert" />
+        <activity
+            android:name=".dialogosManual"
+            android:theme="@style/Theme.AppCompat.Dialog.Alert" />
+        <activity android:name=".seleccionDeRutina" />
+        <activity android:name=".rutinasDisponibles" />
+        <activity android:name=".rutinaActiva" />
+        <activity android:name=".manualDeUsuario" />
+        <activity android:name=".menuPrincipal" />
+        <activity android:name=".primerVista">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

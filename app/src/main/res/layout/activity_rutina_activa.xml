@@ -1,0 +1,554 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RLSelRut"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grisfondo"
+    tools:context=".rutinaActiva">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rec" />
+
+    <Button
+        android:id="@+id/btRegresar"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="54dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="17dp"
+        android:backgroundTint="#FFFFFF"
+        android:fontFamily="@font/roboto"
+        android:textAlignment="textStart"
+        android:textColor="@color/blanco"
+        android:textSize="18sp"
+        android:textStyle="normal"
+        app:icon="@drawable/flecha"
+        app:iconTint="@color/blanco" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="85dp"
+        android:layout_marginRight="20dp"
+        android:fontFamily="@font/roboto_medium"
+        android:text="@string/rtactiva"
+        android:textColor="@color/blanco"
+        android:textSize="45sp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabtBlue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="23dp"
+        android:backgroundTint="@color/blanco"
+        android:clickable="true"
+        android:foregroundTint="@color/azulMarino"
+        android:tint="@color/azulMarino"
+        app:srcCompat="@drawable/bluetooth" />
+
+    <TextView
+        android:id="@+id/txtestado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/fabtBlue"
+        android:fontFamily="@font/roboto"
+        android:text="Estado"
+        android:textColor="@color/blanco"
+        android:textSize="22dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginRight="16dp"/>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="175dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/RLDetRutina"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/style_txt">
+
+                <TextView
+                    android:id="@+id/txtDetallesTit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="Detalles"
+                    android:textAlignment="center"
+                    android:textColor="@color/azulMarino"
+                    android:textSize="28dp" />
+
+                <TextView
+                    android:id="@+id/txtlineDetRut"
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:layout_below="@+id/txtDetallesTit"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@color/azulMarino" />
+
+                <ImageView
+                    android:id="@+id/imgRA"
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:layout_below="@id/txtlineDetRut"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="35dp"
+                    android:background="@drawable/cir" />
+
+                <RelativeLayout
+                    android:id="@+id/SubDetalles"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/imgRA"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:background="@drawable/style_detalles">
+
+                    <TextView
+                        android:id="@+id/txtnumrutina"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="@string/staNumRut"
+                        android:textColor="@color/azulMarino"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:id="@+id/txtrutinaZ1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/txtnumrutina"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:textColor="@color/azulMarino"
+                        android:text="Z1: "
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:id="@+id/txtrutinaVZ1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/txtnumrutina"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/roboto"
+                        android:textColor="@color/negro"
+                        android:text="000"
+                        android:textSize="18dp"
+                        android:layout_toRightOf="@+id/txtrutinaZ1"/>
+
+                    <TextView
+                        android:id="@+id/txtrutinaZ2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/txtnumrutina"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:textColor="@color/azulMarino"
+                        android:text="Z2: "
+                        android:textSize="18dp"
+                        android:layout_toRightOf="@id/txtrutinaVZ1"/>
+
+                    <TextView
+                        android:id="@+id/txtrutinaVZ2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/txtnumrutina"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/roboto"
+                        android:textColor="@color/negro"
+                        android:text="000"
+                        android:textSize="18dp"
+                        android:layout_toRightOf="@+id/txtrutinaZ2"/>
+
+                    <TextView
+                        android:id="@+id/txtrutinaZ3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/txtnumrutina"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:textColor="@color/azulMarino"
+                        android:text="Z3: "
+                        android:textSize="18dp"
+                        android:layout_toRightOf="@+id/txtrutinaVZ2"/>
+
+                    <TextView
+                        android:id="@+id/txtrutinaVZ3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/txtnumrutina"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/roboto"
+                        android:textColor="@color/negro"
+                        android:text="000"
+                        android:textSize="18dp"
+                        android:layout_toRightOf="@+id/txtrutinaZ3"/>
+
+                    <TextView
+                        android:id="@+id/txtZona1Envi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/txtrutinaZ1"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:textColor="@color/azulMarino"
+                        android:text="Inicio: "
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:id="@+id/txtZona1EnviVal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/txtZona1Envi"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/roboto"
+                        android:textColor="@color/negro"
+                        android:text="000"
+                        android:textSize="18dp"
+                        android:layout_marginLeft="40dp"/>
+
+                    <TextView
+                        android:id="@+id/txtZona2Envi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/txtZona1EnviVal"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:textColor="@color/azulMarino"
+                        android:text="Intermedio: "
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:id="@+id/txtZona2EnviVal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/txtZona2Envi"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/roboto"
+                        android:textColor="@color/negro"
+                        android:text="000"
+                        android:textSize="18dp"
+                        android:layout_marginLeft="40dp"/>
+
+                    <TextView
+                        android:id="@+id/txtZona3Envi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/txtZona2EnviVal"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:textColor="@color/azulMarino"
+                        android:text="Final: "
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:id="@+id/txtZona3EnviVal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/txtZona3Envi"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="20dp"
+                        android:fontFamily="@font/roboto"
+                        android:textColor="@color/negro"
+                        android:text="000"
+                        android:textSize="18dp"
+                        android:layout_marginLeft="40dp"/>
+
+                    <TextView
+                        android:id="@+id/txtTiempo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/txtrutinaZ1"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_toRightOf="@+id/txtZona2Envi"
+                        android:fontFamily="@font/roboto_medium"
+                        android:textColor="@color/azulMarino"
+                        android:text="Tiempo: "
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:id="@+id/txtTiempoVal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/txtrutinaVZ3"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="@font/roboto"
+                        android:textColor="@color/negro"
+                        android:text="000"
+                        android:textSize="18dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_toRightOf="@+id/txtTiempo"/>
+
+                    <TextView
+                        android:id="@+id/txtVelocidad"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/txtTiempoVal"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_toRightOf="@+id/txtZona2Envi"
+                        android:fontFamily="@font/roboto_medium"
+                        android:textColor="@color/azulMarino"
+                        android:text="Velocidad: "
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:id="@+id/txtVelocidadVal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/txtTiempoVal"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/roboto"
+                        android:textColor="@color/negro"
+                        android:text="000"
+                        android:textSize="18dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_toRightOf="@+id/txtVelocidad"/>
+
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/RLpruebafun"
+                android:layout_below="@id/RLDetRutina"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/style_txt">
+
+                <TextView
+                    android:id="@+id/txtPruebaFun"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:fontFamily="@font/roboto"
+                    android:text="@string/rtaIPrueba"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/negro"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/txtlineaRLPF"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/txtPruebaFun"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@color/azulMarino" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardFuncionamiento"
+                    android:layout_width="170dp"
+                    android:layout_height="185dp"
+                    android:layout_below="@id/txtlineaRLPF"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    app:cardBackgroundColor="@color/blanco"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="102dp"
+                            android:layout_height="102dp"
+                            android:layout_marginTop="18dp"
+                            android:src="@drawable/pfun" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:fontFamily="@font/roboto_medium"
+                            android:text="Funcionamiento"
+                            android:textColor="@color/azulMarino"
+                            android:textSize="18sp" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/RLControles"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/RLpruebafun"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/style_txt">
+
+                <TextView
+                    android:id="@+id/txtInsDetalles"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="Controles"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/azulMarino"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/txtlineaRLDet"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/txtInsDetalles"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@color/azulMarino" />
+
+                <GridLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtlineaRLDet"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:alignmentMode="alignMargins"
+                    android:columnCount="2"
+                    android:columnOrderPreserved="false"
+                    android:rowCount="4">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardInicio"
+                        android:layout_width="140dp"
+                        android:layout_height="155dp"
+                        android:layout_margin="10dp"
+                        app:cardBackgroundColor="@color/blanco"
+                        app:cardCornerRadius="12dp"
+                        app:cardElevation="5dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="72dp"
+                                android:layout_height="72dp"
+                                android:layout_marginTop="10dp"
+                                android:src="@drawable/iniciar" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:fontFamily="@font/roboto_medium"
+                                android:text="Iniciar"
+                                android:textColor="@color/azulMarino"
+                                android:textSize="18sp" />
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardFin"
+                        android:layout_width="140dp"
+                        android:layout_height="155dp"
+                        android:layout_margin="10dp"
+                        app:cardBackgroundColor="@color/blanco"
+                        app:cardCornerRadius="12dp"
+                        app:cardElevation="5dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="72dp"
+                                android:layout_height="72dp"
+                                android:layout_marginTop="10dp"
+                                android:src="@drawable/detener" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:fontFamily="@font/roboto_medium"
+                                android:text="Detener"
+                                android:textColor="@color/azulMarino"
+                                android:textSize="18sp" />
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </GridLayout>
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/RLControles"
+                android:background="@drawable/fin" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/txttrama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="316dp"
+        android:text="@string/app_name"
+        android:visibility="gone" />
+
+</RelativeLayout>

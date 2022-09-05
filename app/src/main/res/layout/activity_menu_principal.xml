@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grisfondo"
+    tools:context=".menuPrincipal">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/fondom"
+                />
+
+            <TextView
+                android:id="@+id/menuTitulo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/menuTitulo"
+                android:textSize="50sp"
+                android:fontFamily="@font/roboto_medium"
+                android:textColor="@color/blanco"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="20dp"/>
+
+            <TextView
+                android:id="@+id/menuTitulo2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/menuSubtitulo"
+                android:textSize="35sp"
+                android:fontFamily="@font/roboto"
+                android:textStyle="normal"
+                android:textColor="@color/blanco"
+                android:layout_marginTop="-5dp"
+                android:layout_marginStart="20dp"
+                android:layout_below="@id/menuTitulo"/>
+
+            <ImageView
+                android:contentDescription="@string/app_name"
+                android:id="@+id/menuImg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/menuTitulo2"
+                android:layout_marginTop="-15dp"
+                android:src="@drawable/pb"></ImageView>
+
+            <GridLayout
+                android:id="@+id/gridMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:rowCount="3"
+                android:columnCount="1"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="3dp"
+                android:layout_below="@+id/menuImg"
+                android:alignmentMode="alignMargins"
+                android:layout_gravity="center_horizontal"
+                android:columnOrderPreserved="false">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardRutinas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="5dp"
+                    app:cardBackgroundColor="@color/cardcolor"
+                    android:layout_marginTop="15dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:contentDescription="@string/menuSeccionRutinasDisponibles"
+                            android:layout_width="87dp"
+                            android:layout_height="87dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginBottom="20dp"
+                            android:src="@drawable/rut" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/menuSeccionRutinasDisponibles"
+                            android:textSize="28sp"
+                            android:textColor="@color/azulMarino"
+                            android:fontFamily="@font/roboto_medium"
+                            android:layout_gravity="center"
+                            android:layout_marginEnd="20dp"
+                            />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardRutinaSeleccionada"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="5dp"
+                    app:cardBackgroundColor="@color/cardcolor"
+                    android:layout_marginTop="15dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="87dp"
+                            android:contentDescription="@string/menuSeccionSeleccionRutina"
+                            android:layout_height="87dp"
+                            android:src="@drawable/rutsel"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginBottom="20dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/menuSeccionSeleccionRutina"
+                            android:textSize="28sp"
+                            android:textColor="@color/azulMarino"
+                            android:fontFamily="@font/roboto_medium"
+                            android:layout_gravity="center"
+                            android:layout_marginEnd="20dp"
+                            />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardManual"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="5dp"
+                    app:cardBackgroundColor="@color/cardcolor"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="87dp"
+                            android:contentDescription="@string/menuSeccionManualUsuario"
+                            android:layout_height="87dp"
+                            android:src="@drawable/manual"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginBottom="20dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/menuSeccionManualUsuario"
+                            android:textSize="28sp"
+                            android:textColor="@color/azulMarino"
+                            android:fontFamily="@font/roboto_medium"
+                            android:layout_gravity="center"
+                            android:layout_marginEnd="20dp"/>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </GridLayout>
+
+            <TextView
+                android:id="@+id/txtLinea"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/fin"
+                android:layout_below="@+id/gridMenu"
+                android:layout_marginTop="1dp"
+                />
+
+            <TextView
+                android:id="@+id/txtLinea2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/fin"
+                android:layout_below="@+id/txtLinea"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:fontFamily="@font/roboto_medium"
+                android:textSize="25sp"
+                android:textColor="@color/blanco"
+                android:layout_marginTop="5dp"
+                android:textAlignment="center"
+                android:layout_below="@id/gridMenu"
+                />
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

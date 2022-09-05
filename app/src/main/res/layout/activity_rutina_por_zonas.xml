@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blanco"
+    tools:context=".rutinaPorZonas">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true">
+
+            <RelativeLayout
+                android:id="@+id/layoutOpciones"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/style_txt">
+
+                <TextView
+                    android:id="@+id/rdZonas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/rdDescripcion4"
+                    android:textSize="20dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:fontFamily="@font/roboto"
+                    android:textColor="@color/negro"/>
+
+                <ImageView
+                    android:id="@+id/rdIMGZ1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/zona1"
+                    android:layout_below="@+id/rdZonas"
+                    android:layout_marginLeft="35dp" />
+
+                <TextView
+                    android:id="@+id/txtCZ1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/z1"
+                    android:layout_below="@+id/rdIMGZ1"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/roboto"
+                    android:textColor="@color/azulMarino"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="60dp"/>
+
+                <ImageView
+                    android:id="@+id/rdIMGZ2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/zona2"
+                    android:layout_below="@+id/txtCZ1"
+                    android:layout_marginLeft="35dp"/>
+
+                <TextView
+                    android:id="@+id/txtCZ2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/z2"
+                    android:layout_below="@+id/rdIMGZ2"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/roboto"
+                    android:textColor="@color/azulMarino"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="60dp"/>
+
+                <ImageView
+                    android:id="@+id/rdIMGZ3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/zona3"
+                    android:layout_below="@+id/txtCZ2"
+                    android:layout_marginLeft="35dp"/>
+
+                <TextView
+                    android:id="@+id/txtCZ3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/z3"
+                    android:layout_below="@+id/rdIMGZ3"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/roboto"
+                    android:textColor="@color/azulMarino"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="60dp"/>
+
+                <ImageView
+                    android:id="@+id/rdIMGZ12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/zonas12"
+                    android:layout_below="@+id/rdZonas"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="35dp"/>
+
+                <TextView
+                    android:id="@+id/txtCZ12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/rdZ12"
+                    android:layout_below="@+id/rdIMGZ12"
+                    android:layout_alignParentEnd="true"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/roboto"
+                    android:textColor="@color/azulMarino"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginRight="43dp"/>
+
+                <ImageView
+                    android:id="@+id/rdIMGZ13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/zonas13"
+                    android:layout_below="@+id/txtCZ12"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="35dp"/>
+
+                <TextView
+                    android:id="@+id/txtCZ13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/rdZ13"
+                    android:layout_below="@+id/rdIMGZ13"
+                    android:layout_alignParentEnd="true"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/roboto"
+                    android:textColor="@color/azulMarino"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginRight="43dp"/>
+
+                <ImageView
+                    android:id="@+id/rdIMGZ23"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/zonas23"
+                    android:layout_below="@+id/txtCZ13"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="35dp"/>
+
+                <TextView
+                    android:id="@+id/txtCZ23"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/rdZ23"
+                    android:layout_below="@+id/rdIMGZ23"
+                    android:layout_alignParentEnd="true"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/roboto"
+                    android:textColor="@color/azulMarino"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginRight="43dp"/>
+
+                <ImageView
+                    android:id="@+id/rdIMGZT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/zonas3"
+                    android:layout_below="@+id/txtCZ23"
+                    android:layout_centerHorizontal="true"/>
+
+                <TextView
+                    android:id="@+id/txtCZT3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/rdZT3"
+                    android:layout_below="@+id/rdIMGZT"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/roboto"
+                    android:textColor="@color/azulMarino"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginRight="43dp"
+                    android:layout_centerHorizontal="true"/>
+
+                <TextView
+                    android:id="@+id/rdZonas1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/rdDescripcion5"
+                    android:textSize="20dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:fontFamily="@font/roboto"
+                    android:textColor="@color/negro"
+                    android:layout_below="@+id/txtCZT3"/>
+
+                <TextView
+                    android:id="@+id/rdZonas2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/rdDescripcion6"
+                    android:textSize="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:fontFamily="@font/roboto"
+                    android:textColor="@color/negro"
+                    android:layout_below="@+id/rdZonas1" />
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/cerrar"
+                android:background="@drawable/style_buttons"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/layoutOpciones"
+                android:layout_margin="20dp"
+                android:text="@string/cerrar"
+                android:fontFamily="@font/roboto_medium"
+                android:textColor="@color/blanco"/>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

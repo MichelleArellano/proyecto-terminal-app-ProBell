@@ -1,0 +1,651 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grisfondo"
+    tools:context=".manualDeUsuario">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@color/azulMarino">
+        <Button
+            android:id="@+id/btRegresar"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="54dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="17dp"
+            android:backgroundTint="#FFFFFF"
+            android:fontFamily="@font/roboto"
+            android:textAlignment="textStart"
+            android:textColor="@color/blanco"
+            android:textSize="18dp"
+            android:textStyle="normal"
+            app:icon="@drawable/flecha"
+            app:iconTint="@color/blanco" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Manual"
+            android:textSize="45dp"
+            android:fontFamily="@font/roboto_medium"
+            android:textColor="@color/blanco"
+            android:layout_marginTop="55dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"/>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="120dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/layoutOpciones"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/style_txt">
+
+                <TextView
+                    android:id="@+id/txtlineaRL"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/azulMarino"
+                    android:layout_below="@id/txtinstrucciones"/>
+
+                <TextView
+                    android:id="@+id/txtinstrucciones"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto"
+                    android:text="@string/instruccionesM"
+                    android:textColor="@color/negro"
+                    android:textSize="20dp"
+                    android:textAlignment="textStart"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    />
+
+                <TextView
+                    android:id="@+id/m1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txtlineaRL"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="16dp"
+                    android:background="@drawable/mrut"/>
+
+                <TextView
+                    android:id="@+id/txtTXTm1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/m1"
+                    android:layout_toLeftOf="@+id/desplegarm1"
+                    android:layout_below="@+id/txtlineaRL"
+                    android:layout_marginLeft="8dp"
+                    android:text="@string/menuSeccionRutinasDisponibles"
+                    android:textSize="22dp"
+                    android:textColor="@color/azulMarino"
+                    android:fontFamily="@font/roboto"
+                    android:layout_marginTop="17dp"/>
+
+                <Button
+                    android:id="@+id/desplegarm1"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="54dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#FFFFFF"
+                    android:fontFamily="@font/roboto"
+                    app:icon="@drawable/flechabajo"
+                    app:iconTint="@color/azulMarino"
+                    android:layout_below="@id/txtlineaRL"
+                    android:layout_marginLeft="44dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_alignParentRight="true"/>
+
+                <TextView
+                    android:id="@+id/txtm1"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/m1"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@color/azulMarino"/>
+
+                <TextView
+                    android:id="@+id/m2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txtm1"
+                    android:layout_marginLeft="16dp"
+                    android:background="@drawable/mselerut"/>
+
+                <TextView
+                    android:id="@+id/txtTXTm2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/m2"
+                    android:layout_toLeftOf="@+id/desplegarm2"
+                    android:layout_below="@+id/txtm1"
+                    android:layout_marginLeft="8dp"
+                    android:text="@string/menuSeccionSeleccionRutina"
+                    android:textSize="22dp"
+                    android:textColor="@color/azulMarino"
+                    android:fontFamily="@font/roboto"
+                    android:layout_marginTop="5dp"/>
+
+                <Button
+                    android:id="@+id/desplegarm2"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="54dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#FFFFFF"
+                    android:fontFamily="@font/roboto"
+                    app:icon="@drawable/flechabajo"
+                    app:iconTint="@color/azulMarino"
+                    android:layout_below="@id/txtm1"
+                    android:layout_marginLeft="44dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_alignParentRight="true"/>
+
+                <TextView
+                    android:id="@+id/txtm2"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/m2"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@color/azulMarino"/>
+
+                <TextView
+                    android:id="@+id/m4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txtm2"
+                    android:layout_marginLeft="16dp"
+                    android:background="@drawable/mpfun"/>
+
+                <TextView
+                    android:id="@+id/txtTXTm4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/m2"
+                    android:layout_toLeftOf="@+id/desplegarm4"
+                    android:layout_below="@+id/txtm2"
+                    android:layout_marginLeft="8dp"
+                    android:text="@string/cPruebaMotores"
+                    android:textSize="22dp"
+                    android:textColor="@color/azulMarino"
+                    android:fontFamily="@font/roboto"
+                    android:layout_marginTop="5dp"/>
+
+                <Button
+                    android:id="@+id/desplegarm4"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="54dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#FFFFFF"
+                    android:fontFamily="@font/roboto"
+                    app:icon="@drawable/flechabajo"
+                    app:iconTint="@color/azulMarino"
+                    android:layout_below="@id/txtm2"
+                    android:layout_marginLeft="44dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_alignParentRight="true"/>
+
+                <TextView
+                    android:id="@+id/txtm4"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/m4"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@color/azulMarino"/>
+
+                <TextView
+                    android:id="@+id/m5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txtm4"
+                    android:layout_marginLeft="16dp"
+                    android:background="@drawable/mconexion"/>
+
+                <TextView
+                    android:id="@+id/txtTXTm5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/m2"
+                    android:layout_toLeftOf="@+id/desplegarm5"
+                    android:layout_below="@+id/txtm4"
+                    android:layout_marginLeft="8dp"
+                    android:text="@string/conBlue"
+                    android:textSize="22dp"
+                    android:textColor="@color/azulMarino"
+                    android:fontFamily="@font/roboto"
+                    android:layout_marginTop="5dp"/>
+
+                <Button
+                    android:id="@+id/desplegarm5"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="54dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#FFFFFF"
+                    android:fontFamily="@font/roboto"
+                    app:icon="@drawable/flechabajo"
+                    app:iconTint="@color/azulMarino"
+                    android:layout_below="@id/txtm4"
+                    android:layout_marginLeft="44dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_alignParentRight="true"/>
+
+                <TextView
+                    android:id="@+id/txtm5"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/m5"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@color/azulMarino"/>
+
+                <TextView
+                    android:id="@+id/m6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txtm5"
+                    android:layout_marginLeft="16dp"
+                    android:background="@drawable/miniciar"/>
+
+                <TextView
+                    android:id="@+id/txtTXTm6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/m2"
+                    android:layout_toLeftOf="@+id/desplegarm6"
+                    android:layout_below="@+id/txtm5"
+                    android:layout_marginLeft="8dp"
+                    android:text="@string/cIniciar"
+                    android:textSize="22dp"
+                    android:textColor="@color/azulMarino"
+                    android:fontFamily="@font/roboto"
+                    android:layout_marginTop="18dp"/>
+
+                <Button
+                    android:id="@+id/desplegarm6"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="54dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#FFFFFF"
+                    android:fontFamily="@font/roboto"
+                    app:icon="@drawable/flechabajo"
+                    app:iconTint="@color/azulMarino"
+                    android:layout_below="@id/txtm5"
+                    android:layout_marginLeft="44dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_alignParentRight="true"/>
+
+                <TextView
+                    android:id="@+id/txtm6"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/m6"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@color/azulMarino"/>
+
+
+
+                <TextView
+                    android:id="@+id/m9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txtm6"
+                    android:layout_marginLeft="16dp"
+                    android:background="@drawable/mdetener"/>
+
+                <TextView
+                    android:id="@+id/txtTXTm9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/m2"
+                    android:layout_toLeftOf="@id/desplegarm9"
+                    android:layout_below="@+id/txtm6"
+                    android:layout_marginLeft="8dp"
+                    android:text="@string/cDetener"
+                    android:textSize="22dp"
+                    android:textColor="@color/azulMarino"
+                    android:fontFamily="@font/roboto"
+                    android:layout_marginTop="18dp"/>
+
+                <Button
+                    android:id="@+id/desplegarm9"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="54dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#FFFFFF"
+                    android:fontFamily="@font/roboto"
+                    app:icon="@drawable/flechabajo"
+                    app:iconTint="@color/azulMarino"
+                    android:layout_below="@id/txtm6"
+                    android:layout_marginLeft="44dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_alignParentRight="true"/>
+
+                <TextView
+                    android:id="@+id/txtm9"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/m9"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@color/azulMarino"/>
+
+                <TextView
+                    android:id="@+id/txtTXTm10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtm9"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginBottom="18dp"
+                    android:text="@string/pqspb"
+                    android:textSize="22dp"
+                    android:textColor="@color/azulMarino"
+                    android:fontFamily="@font/roboto"
+                    android:layout_marginTop="18dp"
+                    android:layout_toLeftOf="@id/desplegarm10"/>
+
+                <Button
+                    android:id="@+id/desplegarm10"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="54dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#FFFFFF"
+                    android:fontFamily="@font/roboto"
+                    app:icon="@drawable/flechabajo"
+                    app:iconTint="@color/azulMarino"
+                    android:layout_below="@id/txtm9"
+                    android:layout_marginLeft="44dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_alignParentRight="true"/>
+
+                <TextView
+                    android:id="@+id/txtm10"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/txtTXTm10"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@color/azulMarino"/>
+
+                <TextView
+                    android:id="@+id/txtTXTm11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtm10"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="@string/cvlrd"
+                    android:textSize="22dp"
+                    android:textColor="@color/azulMarino"
+                    android:fontFamily="@font/roboto"
+                    android:layout_marginTop="5dp"
+                    android:layout_toLeftOf="@id/desplegarm11" />
+
+                <Button
+                    android:id="@+id/desplegarm11"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="54dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#FFFFFF"
+                    android:fontFamily="@font/roboto"
+                    app:icon="@drawable/flechabajo"
+                    app:iconTint="@color/azulMarino"
+                    android:layout_below="@id/txtm10"
+                    android:layout_marginLeft="44dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_alignParentRight="true"/>
+
+                <TextView
+                    android:id="@+id/txtm11"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/txtTXTm11"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@color/azulMarino"/>
+
+                <TextView
+                    android:id="@+id/txtTXTm12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtm11"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="@string/csurc"
+                    android:textSize="22dp"
+                    android:textColor="@color/azulMarino"
+                    android:fontFamily="@font/roboto"
+                    android:layout_marginTop="5dp"
+                    android:layout_toLeftOf="@id/desplegarm12" />
+
+                <Button
+                    android:id="@+id/desplegarm12"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="54dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#FFFFFF"
+                    android:fontFamily="@font/roboto"
+                    app:icon="@drawable/flechabajo"
+                    app:iconTint="@color/azulMarino"
+                    android:layout_below="@id/txtm11"
+                    android:layout_marginLeft="44dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_alignParentRight="true"/>
+
+                <TextView
+                    android:id="@+id/txtm12"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/txtTXTm12"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@color/azulMarino"/>
+
+                <TextView
+                    android:id="@+id/txtTXTm13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtm12"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="@string/csurz"
+                    android:textSize="22dp"
+                    android:textColor="@color/azulMarino"
+                    android:fontFamily="@font/roboto"
+                    android:layout_marginTop="5dp"
+                    android:layout_toLeftOf="@id/desplegarm13" />
+
+                <Button
+                    android:id="@+id/desplegarm13"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="54dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#FFFFFF"
+                    android:fontFamily="@font/roboto"
+                    app:icon="@drawable/flechabajo"
+                    app:iconTint="@color/azulMarino"
+                    android:layout_below="@id/txtm12"
+                    android:layout_marginLeft="44dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_alignParentRight="true"/>
+
+                <TextView
+                    android:id="@+id/txtm13"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/txtTXTm13"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@color/azulMarino"/>
+
+                <TextView
+                    android:id="@+id/txtTXTm14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtm13"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="@string/csudb"
+                    android:textSize="22dp"
+                    android:textColor="@color/azulMarino"
+                    android:fontFamily="@font/roboto"
+                    android:layout_marginTop="5dp"
+                    android:layout_toLeftOf="@id/desplegarm14" />
+
+                <Button
+                    android:id="@+id/desplegarm14"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="54dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#FFFFFF"
+                    android:fontFamily="@font/roboto"
+                    app:icon="@drawable/flechabajo"
+                    app:iconTint="@color/azulMarino"
+                    android:layout_below="@id/txtm13"
+                    android:layout_marginLeft="44dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_alignParentRight="true"/>
+
+                <TextView
+                    android:id="@+id/txtm14"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/txtTXTm14"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@color/azulMarino"/>
+
+                <TextView
+                    android:id="@+id/txtTXTm15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtm14"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_alignParentStart="true"
+                    android:text="@string/valRut"
+                    android:textSize="22dp"
+                    android:textColor="@color/azulMarino"
+                    android:fontFamily="@font/roboto"
+                    android:layout_marginTop="5dp"
+                    android:layout_toLeftOf="@id/desplegarm15" />
+
+                <Button
+                    android:id="@+id/desplegarm15"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="54dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#FFFFFF"
+                    android:fontFamily="@font/roboto"
+                    app:icon="@drawable/flechabajo"
+                    app:iconTint="@color/azulMarino"
+                    android:layout_below="@id/txtm14"
+                    android:layout_marginLeft="44dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_alignParentRight="true"/>
+
+                <TextView
+                    android:id="@+id/txtm15"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/txtTXTm15"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@color/azulMarino"/>
+
+                <TextView
+                    android:id="@+id/txtTXTm16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtm15"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginBottom="25dp"
+                    android:layout_alignParentStart="true"
+                    android:text="@string/msgR"
+                    android:textSize="22dp"
+                    android:textColor="@color/azulMarino"
+                    android:fontFamily="@font/roboto"
+                    android:layout_marginTop="20dp"
+                    android:layout_toLeftOf="@id/desplegarm16"/>
+
+                <Button
+                    android:id="@+id/desplegarm16"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="54dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#FFFFFF"
+                    android:fontFamily="@font/roboto"
+                    app:icon="@drawable/flechabajo"
+                    app:iconTint="@color/azulMarino"
+                    android:layout_below="@id/txtm15"
+                    android:layout_marginLeft="44dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_alignParentRight="true"/>
+                
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/fin"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/layoutOpciones"/>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

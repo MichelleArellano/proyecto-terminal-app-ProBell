@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blanco"
+    tools:context=".rutinaCompleta">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/layoutOpciones"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/style_txt">
+
+                <TextView
+                    android:id="@+id/rdCompleta"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/rdDescripcion2"
+                    android:textSize="20dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:fontFamily="@font/roboto"
+                    android:textColor="@color/negro"/>
+
+                <ImageView
+                    android:id="@+id/rdIMGCompleta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/pbzonas"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/rdCompleta"
+                    android:layout_marginBottom="20dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/rdDescripcion3"
+                    android:textSize="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:fontFamily="@font/roboto"
+                    android:textColor="@color/negro"
+                    android:layout_below="@+id/rdIMGCompleta"/>
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/cerrar"
+                android:background="@drawable/style_buttons"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/layoutOpciones"
+                android:layout_margin="20dp"
+                android:text="@string/cerrar"
+                android:fontFamily="@font/roboto_medium"
+                android:textColor="@color/blanco"/>
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

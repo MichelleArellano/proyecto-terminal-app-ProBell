@@ -1,0 +1,76 @@
+<resources>
+    <!-- App-->
+    <string name="app_name">ProBell</string>
+    <string name="appVersion">Versión 9.0.0</string>
+
+    <!-- Menú-->
+    <string name="menuTitulo">Bienvenido</string>
+    <string name="menuSubtitulo">Inicio</string>
+    <string name="menuSeccionRutinasDisponibles">Rutinas disponibles</string>
+    <string name="menuSeccionSeleccionRutina">Selección de rutina</string>
+    <string name="menuSeccionManualUsuario">Manual de usuario</string>
+
+    <!-- Interaccion con la app-->
+    <string name="presionaParaSalir">Vuelve a presionar para salir</string>
+    <string name="presionaParaRegresar">Vuelve a presionar para regresar</string>
+    <string name="instruccionesM">Selecciona la opción para mostrar la información.</string>
+    <string name="cerrar">Cerrar</string>
+    <string name="iniciar">Iniciar</string>
+    <string name="siguiente">Siguiente</string>
+
+    <!-- Rutinas disponibles-->
+    <string name="rdTitulo">Rutinas</string>
+    <string name="rdSubTitulo">Parálisis de Bell</string>
+    <string name="rdDescripcion">Este término hace referencia a un trastorno que daña el VII par del nervio craneal, dañando la sensibilidad y movilidad del rostro parcialmente o en su totalidad.</string>
+    <string name="rdDescripcion1">ProBell es una herramienta de apoyo para el tratamiento de fisioterapia compuesta por una aplicación móvil y una máscara de masajes, que generan dos tipos de rutinas:</string>
+    <string name="rdDescripcion2">Este tipo de rutina consiste en estimular todas las zonas del rostro en el siguiente orden:</string>
+    <string name="rdDescripcion3">Iniciando por el hemisferio que haya sido indicado como sano y después con el hemisferio afectado durante el tiempo y velocidad seleccionados.</string>
+    <string name="rdDescripcion4">Este tipo de rutina consiste en estimular desde una hasta tres zonas disponibles en ambos lados del rostro. Estas son las combinaciones posibles:</string>
+    <string name="rdDescripcion5">Se inicia por el hemisferio que haya sido indicado como sano y después con el hemisferio afectado durante el tiempo y velocidad seleccionados.</string>
+    <string name="rdDescripcion6">Para este tipo de rutina es necesario que se proporcione el orden en el que se ejecutarán las zonas (inicio, intermedio o final).</string>
+    <string name="rdZ12">Zonas 1 y 2</string>
+    <string name="rdZ13">Zonas 1 y 3</string>
+    <string name="rdZ23">Zonas 2 y 3</string>
+    <string name="rdZT3">Zonas 1, 2 y 3</string>
+
+    <!-- Seleccion de rutina-->
+    <string name="srTitulo">Selección</string>
+    <string name="sSubTitulo">Hemisferio sano</string>
+    <string name="sSubTitulo1">Zonas</string>
+    <string name="srDescripcion">Para este tipo de rutina, todas las zonas están involucradas.</string>
+    <string name="srDescripcion1">Para este tipo de rutina, selecciona las zonas que necesites estimular.</string>
+    <string name="svalores">Selecciona los valores.</string>
+    <string name="z1">Zona 1</string>
+    <string name="zd1">Frente y cejas</string>
+    <string name="z2">Zona 2</string>
+    <string name="zd2">Pómulos y mejillas</string>
+    <string name="z3">Zona 3</string>
+    <string name="zd3">Boca</string>
+
+    <!-- Controles rutina activa-->
+    <string name="rtactiva">Rutina activa</string>
+    <string name="controles">Controles</string>
+    <string name="cIniciar">Iniciar</string>
+    <string name="cPausar">Pausar</string>
+    <string name="cReanudar">Reanudar</string>
+    <string name="cDetener">Detener</string>
+    <string name="cPruebaMotores">Prueba de motores</string>
+    <string name="rtaInstrucciones">Antes de iniciar, verifica que la máscara funciona.</string>
+    <string name="staNumRut">Número de rutina por zona:</string>
+    <string name="rtaIPrueba">Antes de iniciar, verifica que la máscara funciona.</string>
+
+    <!-- Manual de usuario-->
+    <string name="pqspb">¿Para qué sirve ProBell?</string>
+    <string name="cvlrd">¿Cómo ver las rutinas disponibles?</string>
+    <string name="csurc">¿Cómo seleccionar una rutina completa?</string>
+    <string name="csurz">¿Cómo seleccionar una rutina por zonas?</string>
+    <string name="csudb">¿Cómo seleccionar un dispositivo Bluetooth?</string>
+    <string name="conBlue">Conexión Bluetooth</string>
+    <string name="rutC">Rutina completa</string>
+    <string name="rutZ">Rutina por zonas</string>
+    <string name="dispBlue">Dispositivos Bluetooth</string>
+    <string name="valRut">¿Cómo ver la rutina configurada?</string>
+    <string name="msgR">Mensajes recibidos</string>
+    <string name="todo">TODO</string>
+
+</resources>
